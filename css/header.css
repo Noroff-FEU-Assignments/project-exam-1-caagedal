@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(/media/border-top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+nav a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 8%;
+}
+
+nav a img{
+    object-fit: contain;
+    width: 100%;
+
+}
+
