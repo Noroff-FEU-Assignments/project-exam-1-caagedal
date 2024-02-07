@@ -1,0 +1,29 @@
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0;
+    align-items: center;
+    background: url(/media/border-bottom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    
+}
+
+footer a{
+    color: black;
+}
+
+
+.socials{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

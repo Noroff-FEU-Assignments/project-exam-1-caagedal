@@ -6,12 +6,13 @@
 
 .sacramento {
     font-family: 'Sacramento', cursive;
+    text-transform: none;
 }
 
 /*socials*/
 
 i{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .fa-facebook{
@@ -29,3 +30,13 @@ i{
 .fa-pinterest{
     color: var(--red);
 }
+
+.medium-fontsize{
+    font-size: 24px;
+}
+
+.copy p{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+

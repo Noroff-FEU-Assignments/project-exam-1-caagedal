@@ -1,4 +1,12 @@
 
 
+.container{
+    display: flex;
+    width: 70%;
+}
 
+.container img{
+    width: 100%;
+    object-fit: contain;
+}
 
