@@ -1,0 +1,38 @@
+
+.newest h2{
+    text-align: center;
+}
+
+.newest{
+    margin-top: 20px;
+}
+
+.welcome{
+    align-items: center;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+}
+
+.welcome img{
+    width: 90%;
+
+}
+
+.textbox-center{
+    text-align: center;
+    width: 40%;
+    font-weight: var(--w500);
+    color: var(--dark-text);
+
+    align-items: center;
+}
+
+.textbox-center p{
+    font-size: 20px;
+}
+
+.textbox-center a{
+    padding-top: 30px;
+    color: var(--dark-text);
+}
+

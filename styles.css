@@ -1,0 +1,35 @@
+@import url(/css/resets.css);
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/global.css);
+@import url(/css/pages.css);
+@import url(/css/components.css);
+
+
+
+:root{
+
+    /* Colours */
+
+    --dark-text: #3d2813;
+    --light-text: #FFF;
+
+    --pink: #E7CBCB;
+    --darker-pink: #dbaaaa;
+    --dark-pink: #ECA2A2;
+    --blue: #87a7c4;
+    --dark-blue:rgb(77, 135, 190);
+    --red: #8f403a;
+    
+    --button: #D9D9D9;
+    
+    /* Fonts */
+
+    --montserrat: 'Montserrat', sans-serif;
+    --sacramento: 'Sacramento', cursive;
+
+    --w400: 400;
+    --w500: 500;
+    --w600: 600;
+    
+}

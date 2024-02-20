@@ -1,7 +1,10 @@
-export const baseUrl = "thecolouringnest.cecilieaagedal.no";
-export const postEndpoint = "/wp-json/wp/v2/posts";
-export const mediaEndpoint = "/wp-json/wp/v2/media";
+export const host = "http://thecolouringnest.cecilieaagedal.no";
+export const baseUrl = "/wp-json/wp/v2/posts?_embed";
 
-export const postUrl = baseUrl + postEndpoint;
-export const mediaUrl = baseUrl + mediaEndpoint;
+export const allPosts = "?per_page=100";
+export const latestPosts = "?per_page=6";
+export const featuredPosts = "?tags=4";
+
+
+export const url = host + baseUrl;
 

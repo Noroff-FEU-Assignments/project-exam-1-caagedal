@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta type="description" content="The Colouring nest is my blog about my personal journey in the world of colouring and creativity!">
-    <title>TCN | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4639419757.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
-    <script src="js/script.js" type="module"></script>
+    <!-- Hotjar Tracking Code for project exam 1 - The Colouring Nest -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3873277,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/api/featured.js" type = "module" ></script>
+    <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about/index.html">About</a>
-            <a href="/index.html"><img src="/media/logo.png" alt="The Colouring Nest logo"></a>
-            <a href="/blog/index.html">Blog</a>
-            <a href="/contact/index.html" class="active">Contact</a>
+            <ul class="sidebar">
+                <li><i class="fa-solid fa-xmark"></i></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/about/index.html">About</a></li>
+                <li><a href="/contact/index.html">Contact</a></li>
+            </ul>
+            <ul class="main-nav">
+                <li><a href="/index.html"><h2>The Colouring Nest</h2></a></li>
+                <li class="hide-mobile"><a href="/blog/index.html" class="pad">Blog</a></li>
+                <li class="hide-mobile"><a href="/about/index.html" class="pad">About</a></li>
+                <li class="hide-mobile"><a href="/contact/index.html" class="pad-left">Contact</a></li>
+                <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <h1>Get in touch</h1>
-        <section class="contact container">
-            <img src="/media/contact.png" alt="Image of drawing materials">
-            <div class="contact-sheet">
-                <p>We'd Love to Hear from You! Whether you have a question, a coloring tip to share, or just want to say hello, your messages bring more color to 'The Colouring Nest'!</p>
-                <form action="contact.php" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-                    <input type="submit" value="Send">
-            </div>
-        </section>
+    <main class="flex column">
+
     </main>
-    <footer>
-        <section class="socials">
-            <a href="https://www.facebook.com" target="_blank"><img src="/media/facebook.png" alt="Facebook logo"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="/media/instagram.png" alt="Instagram logo"></a>
-            <a href="https://www.pinterest.com" target="_blank"><img src="/media/pinterest.png" alt="Pinterest logo"></a>
-            <a href="https://snapchat.com" target="_blank"><img src="/media/snapchat.png" alt="Snapchat logo"></a>
-        </section>
-        <section class="copy">
-            <p>&copy; 2024 The Colouring Nest</p>
+    <footer class="flex column">
+        <div class="socials">
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy; 2024 The Colouring Nest</p>
             <p>Created by <a href="https://github.com/caagedal" target="_blank">Cecilie Aagedal</a></p>
-    </footer>
+        </div>
+    </footer>    
 </body>
 </html>
