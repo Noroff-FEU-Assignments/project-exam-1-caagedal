@@ -1,5 +1,5 @@
 
-const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=6";
+const url = "http://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=6";
 
 export async function getPosts(){
 
