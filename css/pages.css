@@ -4,7 +4,7 @@
 }
 
 .newest{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .welcome{
@@ -35,4 +35,5 @@
     padding-top: 30px;
     color: var(--dark-text);
 }
+
 

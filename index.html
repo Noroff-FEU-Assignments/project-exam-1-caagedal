@@ -24,31 +24,29 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="sidebar">
-                <li><i class="fa-solid fa-xmark"></i></li>
-                <li><a href="/blog/index.html">Blog</a></li>
-                <li><a href="/about/index.html">About</a></li>
-                <li><a href="/contact/index.html">Contact</a></li>
-            </ul>
-            <ul class="main-nav">
-                <li><a href="/index.html"><h2>The Colouring Nest</h2></a></li>
-                <li class="hide-mobile"><a href="/blog/index.html" class="pad">Blog</a></li>
-                <li class="hide-mobile"><a href="/about/index.html" class="pad">About</a></li>
-                <li class="hide-mobile"><a href="/contact/index.html" class="pad-left">Contact</a></li>
-                <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <a href="/index.html"><img src="/media/nestlogo.png"></a>
+        </div>
+        <div class="hamburger"></div>
+        <div class="navbar">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/blog/index.html">Blog</a></li>
+                    <li><a href="/about/index.html">About</a></li>
+                    <li><a href="/contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="flex column">
         <section class="newest">
             <h2>Newest Posts</h2>
             <div class="testing-out">
-                <div class="left">
-                    <img src="/media/left.png">
-                </div>
                 <div class="carousel">
-                    <div class="blogcard-large flex column">
+                    
+                    <div class="loader"></div>
+                    <!-- <div class="blogcard-large flex column">
                         <a href="/blog/blogspecific/">
                             <img src="/media/drawing-bird.webp" alt="Colouring a colouring page">
                             <div class="blogcard-large-text">
@@ -61,7 +59,10 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="left">
+                    <img src="/media/left.png">
                 </div>
                 <div class="right">
                     <img src="/media/right.png">
@@ -72,7 +73,10 @@
             <img src="/media/page-border.png" alt="Divider">
         </div>
         <section class="featured flex">
-            <div class="small-card">
+
+            <div class="loader"></div>
+
+            <!-- <div class="small-card">
                 
                     <div class="blogcard-small flex column">
                         <img src="/media/drawing-bird.webp" alt="Colouring a colouring page">
@@ -109,7 +113,7 @@
                     </div>
                 </div>
             
-        </div>
+        </div> -->
         </section>
         <div class="divider flex">
             <img src="/media/page-border.png" alt="Divider">

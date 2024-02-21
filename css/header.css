@@ -30,18 +30,16 @@ nav ul{
 
 nav ul{
     width: 100%;
+
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-nav li{
-    height: 60px;
-}
-
 nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     color: var(--dark-text);
@@ -51,7 +49,25 @@ nav a:hover{
     text-decoration: underline;
 }
 
-nav li:first-child{
+.logo img{
+    width: 100px;
+    object-fit: contain;
+}
+
+.logo{
     margin-right: auto;
 }
 
+/* nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:first-child img{
+    object-fit: contain;
+    width: 60%;
+
+} */
+
+header{
+    background-color: var(--button);
+}

@@ -1,0 +1,50 @@
+.header-wrap{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    height: 100%;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    color: var(--dark-text);
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+/* nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:first-child img{
+    object-fit: contain;
+    width: 60%;
+
+} */
+

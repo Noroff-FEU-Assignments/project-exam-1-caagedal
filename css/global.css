@@ -34,6 +34,7 @@ main{
 
 h1, h2, h3, .read-more{
     font-family: var(--sacramento);
+    font-weight: 500;
    
 }
 

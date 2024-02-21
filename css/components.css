@@ -118,3 +118,18 @@
 .divider img{
     width: 80%;
 }
+
+/* loader from: https://css-loaders.com/dots/ */
+.loader {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+    margin: 0 auto;
+  }
+  @keyframes l5 {
+      0%  {box-shadow: 20px 0 var(--dark-pink), -20px 0 var(--pink);background: var(--dark-pink) }
+      33% {box-shadow: 20px 0 var(--dark-pink), -20px 0 var(--pink);background: var(--pink)}
+      66% {box-shadow: 20px 0 var(--pink),-20px 0 var(--dark-pink); background: var(--pink)}
+      100%{box-shadow: 20px 0 var(--pink),-20px 0 var(--dark-pink); background: var(--dark-pink) }
+  }
