@@ -30,6 +30,7 @@
     border-radius: 10px;
     margin: 40px 0;
     margin-top: 20px;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -59,6 +60,10 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0 0;
+}
+
+.large-post-title h1{
+    font-size: 40px;
 }
 
 /*Small Blog Card*/
@@ -126,6 +131,7 @@
     border-radius: 50%;
     animation: l5 1s infinite linear alternate;
     margin: 0 auto;
+    max-height: 15px;
   }
   @keyframes l5 {
       0%  {box-shadow: 20px 0 var(--dark-pink), -20px 0 var(--pink);background: var(--dark-pink) }

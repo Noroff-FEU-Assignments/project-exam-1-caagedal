@@ -2,16 +2,17 @@
 
 .container-main{
     display: flex;
-    flex-direction: column;
+    
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    height: 500px;
+    
 }
 
 .carousel{
     overflow: hidden;
-    position: relative;
+    display: flex;
+    /* position: relative; */
     border-radius: 1rem;
     margin-top: 1rem;
 }
@@ -19,6 +20,8 @@
 .carousel-inner{
     display: flex;
     transition: transform 1s ease-in-out;
+    width: 1200px;
+    
 }
 
 .carousel img{
@@ -29,18 +32,19 @@
 }
 
 .carousel button{
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%; */
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
 
-.carousel button[data-action="prev"]{
+/* .carousel button[data-action="prev"]{
     left: 0;
 }
 
 .carousel button[data-action="next"]{
     right: 0;
-}
+} */
 

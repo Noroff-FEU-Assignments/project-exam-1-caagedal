@@ -21,7 +21,7 @@ console.log(posts);
 
 export function carouselContainer(api) {
 
-    const carousel = document.querySelector(".carousel");
+    const carousel = document.querySelector(".carousel-inner");
 
     carousel.innerHTML = "";
 
