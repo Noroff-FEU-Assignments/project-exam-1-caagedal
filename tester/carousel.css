@@ -33,6 +33,7 @@
     top: 50%;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .carousel button[data-action="prev"]{
