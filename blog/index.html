@@ -18,30 +18,87 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/js/api/featured.js" type = "module" ></script>
+    <link rel="stylesheet" href="/tester/tester.css">
+    <script src="/js/render/blogcard.js" type = "module" ></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="sidebar">
-                <li><i class="fa-solid fa-xmark"></i></li>
-                <li><a href="/blog/index.html">Blog</a></li>
-                <li><a href="/about/index.html">About</a></li>
-                <li><a href="/contact/index.html">Contact</a></li>
-            </ul>
-            <ul class="main-nav">
-                <li><a href="/index.html"><h2>The Colouring Nest</h2></a></li>
-                <li class="hide-mobile"><a href="/blog/index.html" class="pad">Blog</a></li>
-                <li class="hide-mobile"><a href="/about/index.html" class="pad">About</a></li>
-                <li class="hide-mobile"><a href="/contact/index.html" class="pad-left">Contact</a></li>
-                <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
-            </ul>
-        </nav>
+        <div class="header-wrap">
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/blog/index.html">Blog</a>
+                 <a href="/index.html"><img src="/media/nestlogo.png"></a>
+                <a href="/about/index.html">About</a>
+                <a href="/contact/index.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main class="flex column">
-
+    <main class="flex column sizecontainer">
+        <h1>Blogs</h1>
+        <section class="blog-container grid">
+            <div class="loader"></div>  
+            <!-- <article class="card-container">
+                <img src="/media/placeholder.jpg" alt="Placeholder">
+                <div class="text-container">
+                    <div class="date">
+                        <p>insert date here</p>
+                    </div>
+                    <div class="texte-elements">
+                        <h2>insert title here</h2>
+                        <p>insert text here</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card-container">
+                <img src="/media/placeholder.jpg" alt="Placeholder">
+                <div class="text-container">
+                    <div class="date">
+                        <p>insert date here</p>
+                    </div>
+                    <div class="texte-elements">
+                        <h2>insert title here</h2>
+                        <p>insert text here</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card-container">
+                <img src="/media/placeholder.jpg" alt="Placeholder">
+                <div class="text-container">
+                    <div class="date">
+                        <p>insert date here</p>
+                    </div>
+                    <div class="texte-elements">
+                        <h2>insert title here</h2>
+                        <p>insert text here</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card-container">
+                <img src="/media/placeholder.jpg" alt="Placeholder">
+                <div class="text-container">
+                    <div class="date">
+                        <p>insert date here</p>
+                    </div>
+                    <div class="texte-elements">
+                        <h2>insert title here</h2>
+                        <p>insert text here</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card-container">
+                <img src="/media/placeholder.jpg" alt="Placeholder">
+                <div class="text-container">
+                    <div class="date">
+                        <p>insert date here</p>
+                    </div>
+                    <div class="texte-elements">
+                        <h2>insert title here</h2>
+                        <p>insert text here</p>
+                    </div>
+                </div>
+            </article> -->
+        </section>
     </main>
     <footer class="flex column">
         <div class="socials">

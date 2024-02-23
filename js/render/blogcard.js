@@ -1,4 +1,5 @@
-const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=3";
+
+const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=100";
 
 export async function getPosts(){
 
@@ -16,28 +17,27 @@ export async function getPosts(){
 
 export let posts = await getPosts();
 
-export function featuredContainer(api){
 
-    const featured = document.querySelector(".featured");
+export function blogCard(api){
 
-    featured.innerHTML = "";
+    const blog = document.querySelector(".blog-container");
 
-    for (let i = 0; i < 3; i++){
+    blog.innerHTML = "";
 
+    for (let i = 0; i < api.length; i++){
 
-
-        const featuredCard = document.createElement("article");
-        featuredCard.classList.add("blogcard-small", "flex", "column");
-        featured.appendChild(featuredCard);
+        const blogCard = document.createElement("article");
+        blogCard.classList.add("card-container")
+        blog.appendChild(blogCard);
 
         const image = document.createElement("img");
         image.src = api[i]._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
         image.alt = api[i]._embedded?.["wp:featuredmedia"]?.[0]?.alt_text;
-        featuredCard.appendChild(image);
+        blogCard.appendChild(image);
 
         const textContainer = document.createElement("div");
-        textContainer.classList.add("blogcard-small-text");
-        featuredCard.appendChild(textContainer);
+        textContainer.classList.add("text-container");
+        blogCard.appendChild(textContainer);
 
         const date = document.createElement("div");
         date.classList.add("date");
@@ -48,7 +48,7 @@ export function featuredContainer(api){
         date.appendChild(blogDate);
 
         const textContent = document.createElement("div");
-        textContent.classList.add("small-post-title");
+        textContent.classList.add("text-elements");
         textContainer.appendChild(textContent);
 
         const title = document.createElement("h2");
@@ -59,16 +59,9 @@ export function featuredContainer(api){
         excerpt.innerHTML = api[i].excerpt.rendered;
         textContent.appendChild(excerpt);
 
-        const button = document.createElement("div");
-        button.classList.add("readmore");
-        textContainer.appendChild(button);
-
-        const link = document.createElement("a");
-        link.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
-        link.textContent = "Read more";
-        button.appendChild(link);        
-
     }
+
 }
 
-featuredContainer(posts);
+blogCard(posts);
+

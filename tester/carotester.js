@@ -1,4 +1,6 @@
 // Define the URL to fetch posts from
+
+
 const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=4";
 
 // Function to fetch posts
@@ -110,3 +112,4 @@ async function carouselSetup() {
 
 // Initialize the carousel after the DOM has fully loaded
 document.addEventListener('DOMContentLoaded', carouselSetup);
+

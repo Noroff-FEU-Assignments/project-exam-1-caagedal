@@ -18,8 +18,9 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/js/api/new.js" type = "module" ></script>
+    <link rel="stylesheet" href="/tester/tester.css">
+    <script src="/tester/carotester.js" type = "module" ></script>
+    <script src="/js/render/smallcard.js" type = "module" ></script>
     <title>Document</title>
 </head>
 <body>
@@ -37,17 +38,16 @@
     <main class="flex column">
         <section class="newest">
             <h2>Newest Posts</h2>
-            <div class="testing-out">
-                <div class="carousel">
-                    <div class="loader"></div>
-                </div>
-                <div class="left">
-                    <img src="/media/left.png">
-                </div>
-                <div class="right">
-                    <img src="/media/right.png">
+            <div class="container-main">
+                <div class="carousel">  
+                    <button data-action="prev"><img src="/media/left.png"></button>
+                    <div class="carousel-inner">
+                        <div class="loader"></div>                        
+                    </div>
+                    <button data-action="next"><img src="/media/right.png"></button>               
                 </div>
             </div>
+
         </section>
         <div class="divider flex">
             <img src="/media/page-border.png" alt="Divider">
@@ -55,45 +55,6 @@
         <section class="featured flex">
 
             <div class="loader"></div>
-
-            <!-- <div class="small-card">
-                
-                    <div class="blogcard-small flex column">
-                        <img src="/media/drawing-bird.webp" alt="Colouring a colouring page">
-                        <div class="blogcard-small-text">
-                            <div class="date">
-                                <p>February 15, 2024</p>
-                            </div>
-                            <div class="small-post-title">
-                                <h3>Finished Pages: Mixing Them Medias!</h3>
-                                <p>Hello, creative friends! Today, I'm sharing an experiment that combined watercolor pencils with traditional colored pencils, blending two medium[...]</p>
-                            </div>
-                        </div>
-                        <div class="readmore">    
-                            <a href="/blog/blogspecific/blog.html">Read More</a>
-                        </div>
-                    </div>
-                
-            </div>
-            <div class="small-card">
-                
-                <div class="blogcard-small flex column">
-                    <img src="/media/drawing-bird.webp" alt="Colouring a colouring page">
-                    <div class="blogcard-small-text">
-                        <div class="date">
-                            <p>February 15, 2024</p>
-                        </div>
-                        <div class="small-post-title">
-                            <h3>Finished Pages: Mixing Them Medias!</h3>
-                            <p>Hello, creative friends! Today, I'm sharing an experiment that combined watercolor pencils with traditional colored pencils, blending two medium[...]</p>
-                        </div>
-                    </div>
-                    <div class="readmore">    
-                        <a href="/blog/blogspecific/blog.html">Read More</a>
-                    </div>
-                </div>
-            
-        </div> -->
         </section>
         <div class="divider flex">
             <img src="/media/page-border.png" alt="Divider">

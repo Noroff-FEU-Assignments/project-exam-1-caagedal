@@ -11,7 +11,7 @@ export async function getPosts(){
 
         return posts;
     }catch(error){
-        console.log(error);
+        console.error(error);
     }finally{}
 }
 
