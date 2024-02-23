@@ -19,8 +19,8 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <link rel="stylesheet" href="/tester/tester.css">
-    <script src="/tester/carotester.js" type = "module" ></script>
-    <script src="/js/render/smallcard.js" type = "module" ></script>
+    <script src="/js/utility/errorhandling.js" type = "module" ></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -42,14 +42,26 @@
                 <p>We'd Love to Hear from You!
                     Whether you have a question, a coloring tip to share, or just want to say hello, your messages bring more color to 'The Colouring Nest'!</p>
                 <form class="flex column">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <div class="name">
+                        <label for="name">Name</label>                        
+                        <input type="text" id="name" name="name" required>
+                        <span class = "error" aria-live="polite"></span>
+                    </div>
+                    <div class = "email">    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class = "error" aria-live="polite"></span>
+                    </div>
+                    <div class = "subject">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class = "error" aria-live="polite"></span>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class = "error" aria-live="polite"></span>
+                    </div>
                 </form>
             </div>
         </section>
