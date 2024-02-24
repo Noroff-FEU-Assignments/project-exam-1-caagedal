@@ -4,6 +4,7 @@
 
 const featuredUrl = "http://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&tags=4";
 
+
 export async function getPosts(){
 
     try{
@@ -18,7 +19,9 @@ export async function getPosts(){
     }finally{}
 }
 
+
 export let featureData = await getPosts();
+
 
 export function featurePosts(api){
 

@@ -50,8 +50,10 @@
 
 .date{
     text-align: end;
-    padding: 10px 10px 0 0;
+    padding: 10px 20px;
+    
 }
+
 
 .blogcard-large img{
     width: 100%;
@@ -115,7 +117,7 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
     gap: 20px;
     width: 100%;
@@ -143,7 +145,7 @@
 .text-elements{
     color: var(--dark-text);
     font-weight: var(--w500);
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 

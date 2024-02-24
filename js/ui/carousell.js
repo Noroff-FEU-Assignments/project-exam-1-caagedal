@@ -1,5 +1,7 @@
 // Define the URL to fetch posts from
 
+import { customExcerpt } from "../render/blogcard.js";
+
 
 const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=4";
 
@@ -65,9 +67,9 @@ function carouselContainer(posts) {
         title.textContent = post.title.rendered;
         textContent.appendChild(title);
 
-        // const excerpt = document.createElement("p");
-        // excerpt.innerHTML = post.excerpt.rendered;
-        // textContent.appendChild(excerpt);
+        const excerpt = document.createElement("p");
+        excerpt.innerHTML = customExcerpt(post.excerpt.rendered);
+        textContent.appendChild(excerpt);
 
     });
 

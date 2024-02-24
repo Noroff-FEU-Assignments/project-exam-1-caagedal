@@ -17,6 +17,13 @@ export async function getPosts(){
 
 export let posts = await getPosts();
 
+export function customExcerpt(excerpt) {
+    const words = excerpt.split(" ");
+    if (words.length > 15) {
+        return words.slice(0, 15).join(" ") + "...";
+    }
+    return excerpt;
+}
 
 export function blogCard(api){
 
@@ -25,6 +32,7 @@ export function blogCard(api){
     blog.innerHTML = "";
 
     for (let i = 0; i < api.length; i++){
+        
 
         const blogCard = document.createElement("article");
         blogCard.classList.add("card-container")
@@ -56,8 +64,13 @@ export function blogCard(api){
         textContent.appendChild(title);
 
         const excerpt = document.createElement("p");
-        excerpt.innerHTML = api[i].excerpt.rendered;
+        excerpt.innerHTML = customExcerpt (api[i].excerpt.rendered);
         textContent.appendChild(excerpt);
+
+        const readMore = document.createElement("a");
+        readMore.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
+        readMore.textContent = "Read more";
+        textContent.appendChild(readMore);
 
     }
 

@@ -1,5 +1,5 @@
 // Define the URL to fetch posts from
-
+import { customExcerpt } from "../js/utility/excerpt.js";
 
 
 
@@ -67,9 +67,9 @@ function carouselContainer(posts) {
         title.textContent = post.title.rendered;
         textContent.appendChild(title);
 
-        // const excerpt = document.createElement("p");
-        // excerpt.innerHTML = post.excerpt.rendered;
-        // textContent.appendChild(excerpt);
+        const excerpt = document.createElement("p");
+        excerpt.innerHTML = customExcerpt(post.excerpt.rendered);
+        textContent.appendChild(excerpt);
 
     });
 
