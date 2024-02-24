@@ -34,27 +34,6 @@ export function renderPost(post){
     const postContainer = document.querySelector(".post-container");
     postContainer.innerHTML = "";
 
-    //modal
-
-   
-
-    // const modalContent = document.createElement("img");
-    // modalContent.classList.add("modal-content");
-    
-
-    // const modalClose = document.createElement("span");
-    // moadalClose.classList.add("close");
-    // moadalClose.textContent = "x";
-    // modal.append(modalClose);
-
-    // document.body.appendChild(modal);
-
-    // //close modal
-
-    // modalClose.addEventListener("click", () => {
-    //     modal.style.display = "none";
-    // });
-
     // post rendering
 
     const postContent = document.createElement("article");
@@ -78,16 +57,18 @@ export function renderPost(post){
     postTitle.textContent = post.title.rendered;
     postText.appendChild(postTitle);
 
-    const postTextContent = document.createElement("p");
+    const postTextContent = document.createElement("div");
     postTextContent.innerHTML = post.content.rendered;
+    postTextContent.classList.add("html-content");
     postText.appendChild(postTextContent);
+
+    //modal
+
+
+
+    //Update title
 
     document.title = post.title.rendered + " " + "| The Colouring Nest";
 
-    // close modal outside of image
-
-    // modal.addEventListener("click", () => {
-    //     modal.style.display = "none";
-    // });
 }
 
