@@ -17,13 +17,13 @@ export async function getPosts(){
 
 export let posts = await getPosts();
 
-export function customExcerpt(excerpt) {
-    const words = excerpt.split(" ");
-    if (words.length > 15) {
-        return words.slice(0, 15).join(" ") + "...";
-    }
-    return excerpt;
-}
+// export function customExcerpt(excerpt) {
+//     const words = excerpt.split(" ");
+//     if (words.length > 15) {
+//         return words.slice(0, 15).join(" ") + "...";
+//     }
+//     return excerpt;
+// }
 
 export function blogCard(api){
 
@@ -67,10 +67,20 @@ export function blogCard(api){
         excerpt.innerHTML = customExcerpt (api[i].excerpt.rendered);
         textContent.appendChild(excerpt);
 
-        const readMore = document.createElement("a");
-        readMore.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
-        readMore.textContent = "Read more";
-        textContent.appendChild(readMore);
+        const button = document.createElement("div");
+        button.classList.add("readmore");
+        textContainer.appendChild(button);
+
+        const link = document.createElement("a");
+        link.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
+        link.textContent = "Read more";
+        button.appendChild(link);        
+
+
+        // const readMore = document.createElement("a");
+        // readMore.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
+        // readMore.textContent = "Read more";
+        // textContent.appendChild(readMore);
 
     }
 

@@ -1,3 +1,19 @@
+import  {urlEndpoint} from "./constants.js";
+
+//fetching the API
+
+export async function getApi(){
+    try{
+        const response = await fetch(urlEndpoint);
+        if (!response.ok){
+            throw new Error("error, failed to fetch url");
+        }
+        const results = await response.json();
+        return results;
+    } catch(error){
+        console.error("Error, failed to fetch posts", error);
+    }
+}
 
 
 
@@ -10,12 +26,10 @@
 //     return data;
 // }
 
-import  {urlEndpoint} from "./constants.js";
 
-//fetching the API
 
-export async function getApi(){
-    const response = await fetch(urlEndpoint);
-    const results = await response.json();
-    return results;
-}
+
+// const response = await fetch(urlEndpoint);
+    
+// const results = await response.json();
+// return results;
