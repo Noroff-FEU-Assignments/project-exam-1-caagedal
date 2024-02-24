@@ -113,5 +113,5 @@ async function carouselSetup() {
 }
 
 // Initialize the carousel after the DOM has fully loaded
-document.addEventListener('DOMContentLoaded', carouselSetup);
+carouselSetup();
 
