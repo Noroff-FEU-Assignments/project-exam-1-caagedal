@@ -1,38 +1,5 @@
 
-//FÅKK ALT
-
-
-//ligger i fetchId
-const queryString = document.location.search;
-
-const params = new URLSearchParams(queryString);
-
-const id = params.get("id");
-
-const newUrl = "http://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts"+ "/" + id + "?_embed";
-
-
-
-//Kjøre på pages-post tenker jeg
-export async function fetchApi(){
-
-    try{
-        const response = await fetch(newUrl);
-        const post = await response.json();
-
-        renderPost(post);
-    }catch(error){
-        console.error("error");
-    }
-}
-
-fetchApi()
-
-
-
-
-
-//kjøre i render
+//Rendering the specific blogpost
 
 export function renderPost(post){
 
@@ -76,4 +43,3 @@ export function renderPost(post){
     document.title = post.title.rendered + " " + "| The Colouring Nest";
 
 }
-

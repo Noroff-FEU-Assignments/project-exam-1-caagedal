@@ -1,21 +1,3 @@
-const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=3";
-
-export async function getPosts(){
-
-    try{
-        const response = await fetch (url);
-        const posts = await response.json();
-
-        console.log(posts);
-
-        return posts;
-    }catch(error){
-        console.error(error);
-    }
-}
-
-export let posts = await getPosts();
-
 export function featuredContainer(api){
 
     const featured = document.querySelector(".featured");
@@ -70,5 +52,3 @@ export function featuredContainer(api){
 
     }
 }
-
-featuredContainer(posts);

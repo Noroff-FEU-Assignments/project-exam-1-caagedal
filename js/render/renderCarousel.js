@@ -1,27 +1,6 @@
-// Define the URL to fetch posts from
+import { customExcerpt } from "../utility/excerpt.js";
 
-import { customExcerpt } from "../render/blogcard.js";
-
-
-const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=4";
-
-// Function to fetch posts
-async function getPosts() {
-    try {
-        const response = await fetch(url);
-        const posts = await response.json();
-        console.log(posts);
-        return posts;
-    } catch (error) {
-        console.error(error);
-        return []; // Return an empty array in case of error.
-    }
-}
-
-//code suggested by chatGPT and from live session class with Oliver Dipple, made personal changes to fit my content
-
-// Function to create carousel slides
-function carouselContainer(posts) {
+export function carouselContainer(posts) {
     const carouselInner = document.querySelector(".carousel-inner");
     
     // Clear existing content (loader etc)
@@ -76,42 +55,5 @@ function carouselContainer(posts) {
     return posts.length;
 }
 
-// Navigation functions and update logic
-let currentSlide = 0;
-let postLength = 0;
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % postLength; // Loop back to first slide if at the end
-    updateCarousel();
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + imageLength) % postLength; // Loop back to last slide if at the beginning
-    updateCarousel();
-}
-
-function updateCarousel() {
-    const slides = document.querySelectorAll(".carousel-inner .blogcard-large");
-    slides.forEach((slide, index) => {
-        slide.style.display = index === currentSlide ? "block" : "none"; // Only display the current slide
-    });
-}
-
-// Carousel setup function
-async function carouselSetup() {
-    const posts = await getPosts();
-    postLength = carouselContainer(posts); // Create slides and update postLength
-
-    const carousel = document.querySelector(".carousel");
-    const buttons = {
-        prev: carousel.querySelector("[data-action='prev']"),
-        next: carousel.querySelector("[data-action='next']")
-    };
-
-    buttons.prev.addEventListener("click", prevSlide);
-    buttons.next.addEventListener("click", nextSlide);
-}
-
-// Initialize the carousel after the DOM has fully loaded
-carouselSetup();
 

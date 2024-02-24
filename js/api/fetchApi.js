@@ -1,10 +1,10 @@
-import  {urlEndpoint} from "./constants.js";
+import  {baseUrl} from "./constants.js";
 
 //fetching the API
 
-export async function getApi(){
+export async function getApi(param){
     try{
-        const response = await fetch(urlEndpoint);
+        const response = await fetch(baseUrl+param);
         if (!response.ok){
             throw new Error("error, failed to fetch url");
         }
@@ -14,22 +14,3 @@ export async function getApi(){
         console.error("Error, failed to fetch posts", error);
     }
 }
-
-
-
-// export async function fetchApi(url){
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     if(!response.ok){
-//         throw new Error("Something went wrong");
-//     }
-//     return data;
-// }
-
-
-
-
-// const response = await fetch(urlEndpoint);
-    
-// const results = await response.json();
-// return results;

@@ -1,29 +1,4 @@
-
-const url = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts?_embed&per_page=100";
-
-export async function getPosts(){
-
-    try{
-        const response = await fetch (url);
-        const posts = await response.json();
-
-        console.log(posts);
-
-        return posts;
-    }catch(error){
-        console.error(error);
-    }
-}
-
-export let posts = await getPosts();
-
-// export function customExcerpt(excerpt) {
-//     const words = excerpt.split(" ");
-//     if (words.length > 15) {
-//         return words.slice(0, 15).join(" ") + "...";
-//     }
-//     return excerpt;
-// }
+import { customExcerpt } from "../utility/excerpt.js";
 
 export function blogCard(api){
 
@@ -76,15 +51,6 @@ export function blogCard(api){
         link.textContent = "Read more";
         button.appendChild(link);        
 
-
-        // const readMore = document.createElement("a");
-        // readMore.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
-        // readMore.textContent = "Read more";
-        // textContent.appendChild(readMore);
-
     }
 
 }
-
-blogCard(posts);
-
