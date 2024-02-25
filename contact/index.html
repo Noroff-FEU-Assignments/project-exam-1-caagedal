@@ -20,6 +20,7 @@
     </script>
     <link rel="stylesheet" href="/tester/tester.css">
     <script src="/js/index.js" type = "module" ></script>
+    <script src="/js/utility/formValidation.js" type = "module" ></script>
     <meta name="description" content="Welcome to The Colouring Nest, my world of color and creativity. Join me in my journey with coloring and painting!">
     <title>Contact | The Colouring Nest</title>
 </head>
@@ -46,11 +47,11 @@
                     <div class="name">
                         <label for="name">Name</label>                        
                         <input type="text" id="name" name="name">
-                        <span class = "error" aria-live="polite"></span>
+                        <span class = "error-name" aria-live="polite"></span>
                     </div>
                     <div class = "email">    
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="mail" name="email">
                         <span class = "error" aria-live="polite"></span>
                     </div>
                     <div class = "subject">
@@ -63,6 +64,7 @@
                         <textarea id="message" name="message"></textarea>
                         <span class = "error" aria-live="polite"></span>
                     </div>
+                    <button>Submit</button>
                 </form>
             </div>
         </section>
