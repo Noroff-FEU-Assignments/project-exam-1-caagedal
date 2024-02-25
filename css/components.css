@@ -219,7 +219,34 @@
   }
 
 
-  
+  @media(max-width : 1000px){
+    .contact-container{
+        flex-direction: column;
+        background-color: var(--pink);
+        border-radius: 30px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container img{
+        display: none;
+    }
+
+    input, textarea{
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        border: 2px solid var(--red);
+    }
+
+    .form-container{
+        gap: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+}
 
 .hamburger{
     display: none;

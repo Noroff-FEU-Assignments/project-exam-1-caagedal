@@ -1,9 +1,11 @@
-@import url(/css/resets.css);
-@import url(/css/header.css);
-@import url(/css/footer.css);
-@import url(/css/global.css);
-@import url(/css/pages.css);
-@import url(/css/components.css);
+@import url(css/_footer.css);
+@import url(css/_global.css);
+@import url(css/_header.css);
+@import url(css/_pages.css);
+@import url(css/_resets.css);
+@import url(css/_typography.css);
+@import url(css/_utility.css);
+@import url(css/_media.css);
 
 
 

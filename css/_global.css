@@ -1,0 +1,56 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+
+
+/*Fonts*/
+
+h1, h2, h3, .read-more{
+    font-family: var(--sacramento);
+    font-weight: 500;
+   
+}
+
+p, a, .subscribe{
+    font-family: var(--montserrat);
+}
+
+h2{
+    font-size: 40px;
+}
+
+@media (max-width: 1300px){
+
+    main, header{
+        max-width: 95%;
+        margin: 0 auto;
+        
+    }
+  }
