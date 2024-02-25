@@ -1,4 +1,4 @@
-export const baseUrl = "http://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts";
+export const baseUrl = "https://thecolouringnest.cecilieaagedal.no/wp-json/wp/v2/posts";
 
 export const newPosts = "?_embed&per_page=4";
 export const featuredPosts = "?_embed&per_page=3";
