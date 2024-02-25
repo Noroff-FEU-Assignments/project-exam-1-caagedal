@@ -42,14 +42,15 @@ export function blogCard(api){
         excerpt.innerHTML = customExcerpt (api[i].excerpt.rendered);
         textContent.appendChild(excerpt);
 
-        const button = document.createElement("div");
-        button.classList.add("readmore");
-        textContainer.appendChild(button);
+        // const button = document.createElement("div");
+        // button.classList.add("readmore");
+        // textContainer.appendChild(button);
 
         const link = document.createElement("a");
+        link.classList.add("read-more-button");
         link.href = `/blog/blogspecific/index.html?id=${api[i].id}`;
         link.textContent = "Read more";
-        button.appendChild(link);        
+        textContent.appendChild(link);        
 
     }
 

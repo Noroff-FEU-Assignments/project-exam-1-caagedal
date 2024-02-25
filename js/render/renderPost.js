@@ -13,18 +13,28 @@ export function renderPost(post){
     postContent.classList.add("post-content");
     postContainer.appendChild(postContent);
 
+    
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("image-container");
+    postContent.appendChild(imageContainer);
+    
     const postImage = document.createElement("img");
     postImage.src = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
     postImage.alt = post._embedded?.["wp:featuredmedia"]?.[0]?.alt_text;
-    postContent.appendChild(postImage);
+    imageContainer.appendChild(postImage);
+    
+    const dateContainer = document.createElement("div");
+    dateContainer.classList.add("date");
+    postContent.appendChild(dateContainer);
 
+    const postDate = document.createElement("p");
+    postDate.textContent = new Date(post.date).toLocaleString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+    dateContainer.appendChild(postDate);
+    
     const postText = document.createElement("div");
     postText.classList.add("post-text");
     postContent.appendChild(postText);
     
-    const postDate = document.createElement("p");
-    postDate.textContent = new Date(post.date).toLocaleString("en-GB", { day: "numeric", month: "long", year: "numeric" });
-    postText.appendChild(postDate);
 
     const postTitle = document.createElement("h1");
     postTitle.textContent = post.title.rendered;

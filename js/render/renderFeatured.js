@@ -9,7 +9,7 @@ export function featuredContainer(api){
 
 
         const featuredCard = document.createElement("article");
-        featuredCard.classList.add("blogcard-small", "flex", "column");
+        featuredCard.classList.add("blogcard-small");
         featured.appendChild(featuredCard);
 
         const image = document.createElement("img");

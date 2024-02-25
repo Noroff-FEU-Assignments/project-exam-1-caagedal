@@ -42,8 +42,9 @@
 
 .date{
     text-align: end;
-    padding: 10px 10px 0 0;
 }
+
+
 
 .blogcard-large img{
     width: 100%;
@@ -94,7 +95,7 @@
 
 
 
-@media(max-width: 1200px){
+@media(max-width: 1160px){
 
 
 
