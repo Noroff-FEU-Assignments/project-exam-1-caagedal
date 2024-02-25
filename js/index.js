@@ -1,15 +1,14 @@
 import { singlePost } from "./pages/blogPost.js";
 import { homepage } from "./pages/home.js";
 import { allPosts } from "./pages/blogs.js";
-import { hamburger, toggle} from "./ui/navbar.js";
+import { hamburger} from "./ui/navbar.js";
 
 
 
-// backTop();
+// backTop(); Tried to make a "Back to top" button, but time ran out
 hamburger();
 
-// singlePost();
-// homepage();
+
 
 export async function router(){
 

@@ -1,3 +1,5 @@
+//tried using template for this, don't know if that was very clever of me as I'm not very used to it.. 
+
 const layoutModal = `
 <button class="close_modal"><i class="fa-solid fa-xmark"></i>
 </button>

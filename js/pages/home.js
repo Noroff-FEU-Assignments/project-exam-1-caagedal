@@ -12,6 +12,6 @@ export async function featureSetup(){
 
 export async function homepage(){
     featureSetup();
-    carousel.carouselSetup(); //Tried my best to get this function in here, but I kept getting errors on it, and I could not for the life of me find out why. Will look into it after delivery.
+    carousel.carouselSetup();
 }
 

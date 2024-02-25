@@ -9,7 +9,15 @@ export async function fetchId(){
 
     const newUrl = baseUrl + "/" + id + "?_embed";
 
-    const response = await fetch(newUrl);
-    const post = await response.json();
-    return post; 
+    try{
+        const response = await fetch(newUrl);
+        if (!response.ok){
+            throw new Error("Error, failed to fetch new url");
+        }        
+        const post = await response.json();
+        return post;
+    } catch(error){
+        console.error("Error, failed to fetch posts", error);
+    }
 }
+

@@ -6,8 +6,6 @@ export function featuredContainer(api){
 
     for (let i = 0; i < 3; i++){
 
-
-
         const featuredCard = document.createElement("article");
         featuredCard.classList.add("blogcard-small");
         featured.appendChild(featuredCard);

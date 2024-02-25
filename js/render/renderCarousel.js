@@ -3,7 +3,6 @@ import { customExcerpt } from "../utility/excerpt.js";
 export function carouselContainer(posts) {
     const carouselInner = document.querySelector(".carousel-inner");
     
-    // Clear existing content (loader etc)
     carouselInner.innerHTML = ""; 
 
 

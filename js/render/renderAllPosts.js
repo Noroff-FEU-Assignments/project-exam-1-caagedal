@@ -1,5 +1,7 @@
 import { customExcerpt } from "../utility/excerpt.js";
 
+//rendering all posts to blogsite, could not find out how to create the "view more" button
+
 export function blogCard(api){
 
     const blog = document.querySelector(".blog-container");
@@ -41,10 +43,6 @@ export function blogCard(api){
         const excerpt = document.createElement("p");
         excerpt.innerHTML = customExcerpt (api[i].excerpt.rendered);
         textContent.appendChild(excerpt);
-
-        // const button = document.createElement("div");
-        // button.classList.add("readmore");
-        // textContainer.appendChild(button);
 
         const link = document.createElement("a");
         link.classList.add("read-more-button");
