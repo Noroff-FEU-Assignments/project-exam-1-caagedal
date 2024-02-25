@@ -33,7 +33,10 @@ body{
 }
  */
 
- @import url(/css/resets.css);
+
+
+
+@import url(/css/resets.css);
 @import url(/tester/testerhead.css);
 @import url(/css/footer.css);
 @import url(/css/global.css);

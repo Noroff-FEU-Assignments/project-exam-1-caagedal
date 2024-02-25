@@ -20,12 +20,14 @@
     </script>
     <link rel="stylesheet" href="/tester/tester.css">
     <script src="/js/index.js" type = "module" ></script>
-    <title>Document</title>
+    <meta name="description" content="Welcome to The Colouring Nest, my world of color and creativity. Join me in my journey with coloring and painting!">
+    <title>Blogs | The Colouring Nest</title>
 </head>
 <body>
     <header>
         <div class="header-wrap">
-            <nav>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <nav class="navbar">
                 <a href="/index.html">Home</a>
                 <a href="/blog/index.html">Blog</a>
                  <a href="/index.html"><img src="/media/nestlogo.png"></a>
@@ -36,9 +38,12 @@
     </header>
     <main class="flex column sizecontainer">
         <h1>Blogs</h1>
-        <section class="blog-container grid">
+        <div class="blog-container grid">
             <div class="loader"></div>  
-        </section>
+        </div>
+        <div class="load-more flex column">
+            <button class="button">View more posts</button>
+        </div>
     </main>
     <footer class="flex column">
         <div class="socials">

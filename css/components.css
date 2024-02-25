@@ -182,3 +182,11 @@
       100%{box-shadow: 20px 0 var(--pink),-20px 0 var(--dark-pink); background: var(--dark-pink) }
   }
 
+
+  @media (min-width: 800px){
+
+    .hamburger{
+        display: none;
+    }
+  }
+

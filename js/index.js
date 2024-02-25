@@ -1,9 +1,12 @@
 import { singlePost } from "./pages/blogPost.js";
 import { homepage } from "./pages/home.js";
 import { allPosts } from "./pages/blogs.js";
+import { hamburger, toggle} from "./ui/navbar.js";
+import { backTop } from "./utility/backTop.js";
 
 
-
+// backTop();
+hamburger();
 
 // singlePost();
 // homepage();

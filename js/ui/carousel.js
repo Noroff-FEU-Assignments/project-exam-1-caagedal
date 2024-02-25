@@ -12,7 +12,7 @@ export function nextSlide() {
 }
 
 export function prevSlide() {
-    currentSlide = (currentSlide - 1 + imageLength) % postLength; // Loop back to last slide if at the beginning
+    currentSlide = (currentSlide - 1 + postLength) % postLength; // Loop back to last slide if at the beginning
     updateCarousel();
 }
 

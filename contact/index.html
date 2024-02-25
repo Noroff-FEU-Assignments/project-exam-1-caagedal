@@ -20,13 +20,14 @@
     </script>
     <link rel="stylesheet" href="/tester/tester.css">
     <script src="/js/index.js" type = "module" ></script>
-
-    <title>Document</title>
+    <meta name="description" content="Welcome to The Colouring Nest, my world of color and creativity. Join me in my journey with coloring and painting!">
+    <title>Contact | The Colouring Nest</title>
 </head>
 <body>
     <header>
         <div class="header-wrap">
-            <nav>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <nav class="navbar">
                 <a href="/index.html">Home</a>
                 <a href="/blog/index.html">Blog</a>
                  <a href="/index.html"><img src="/media/nestlogo.png"></a>
@@ -44,22 +45,22 @@
                 <form class="flex column">
                     <div class="name">
                         <label for="name">Name</label>                        
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name">
                         <span class = "error" aria-live="polite"></span>
                     </div>
                     <div class = "email">    
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="text" id="email" name="email">
                         <span class = "error" aria-live="polite"></span>
                     </div>
                     <div class = "subject">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject">
                         <span class = "error" aria-live="polite"></span>
                     </div>
                     <div class="message">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message"></textarea>
                         <span class = "error" aria-live="polite"></span>
                     </div>
                 </form>

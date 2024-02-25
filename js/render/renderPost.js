@@ -1,3 +1,4 @@
+import { setupModal } from "../ui/modal.js";
 
 //Rendering the specific blogpost
 
@@ -34,12 +35,16 @@ export function renderPost(post){
     postTextContent.classList.add("html-content");
     postText.appendChild(postTextContent);
 
-    //modal
-
-
-
     //Update title
 
     document.title = post.title.rendered + " " + "| The Colouring Nest";
+
+
+    //modal
+    
+    const img = postTextContent.querySelector("img");
+    
+
+    setupModal(img);
 
 }
