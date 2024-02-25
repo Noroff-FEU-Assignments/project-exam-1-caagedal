@@ -49,9 +49,20 @@
     max-height: 100%;
     margin: 50px auto;
     gap: 30px;
+    background-color: var(--pink);
+    padding: 20px;
+    border-radius: 30px;
 }
 
-
+form button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--montserrat);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
 
 .form-container{
     gap: 40px;
@@ -154,3 +165,22 @@ dialog::backdrop{
     cursor: pointer;
 }
 
+.about{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    padding: 40px;
+    background-color: var(--blue);
+    border-radius: 30px;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+.about h1{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.about h2{
+    padding: 20px;
+}

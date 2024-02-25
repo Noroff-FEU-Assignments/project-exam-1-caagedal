@@ -3,9 +3,10 @@
 @import url(css/_header.css);
 @import url(css/_pages.css);
 @import url(css/_resets.css);
-@import url(css/_typography.css);
-@import url(css/_utility.css);
+@import url(css/_components.css);
+@import url(css/_carousel.css);
 @import url(css/_media.css);
+
 
 
 
